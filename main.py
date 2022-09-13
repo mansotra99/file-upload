@@ -38,13 +38,8 @@ if os.getenv('ENVIRONMENT')=="PRODUCTION" or os.getenv('ENVIRONMENT')=="STAGING"
 app = FastAPI()
 app.add_middleware(SentryAsgiMiddleware)
 
-
-
-
- 
-
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
-app.include_router(imageRoute, prefix='/api/fv1/image', tags=["Demo"],dependencies=[Depends(create_request_id)])
+app.include_router(imageRoute, prefix='/api/fv1/image', tags=["Image Upload"],dependencies=[Depends(create_request_id)])
 
 @app.exception_handler(InvalidationException)
 async def invalidation_exception_handler(request: Request, exc: InvalidationException):
@@ -61,9 +56,6 @@ async def internal_server_error(request: Request, exc: InternalServerError):
 
 
 init_logging()
-
-
-
 
 @app.get('/ping', tags=['system'])
 async def ping():
