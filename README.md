@@ -31,7 +31,8 @@ Added request_id(Can also be passed from Nginx Server) which can be helpful for 
 
 ## SWAGGER DOCS
 on web browser run localhost:<port>/docs
-ex. localhost:8000/docs
+  
+Example: localhost:8000/docs
 
 
 
