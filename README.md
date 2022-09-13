@@ -30,7 +30,7 @@ Created Reponse, Logging Common Structure
 Added request_id(Can also be passed from Nginx Server) which can be helpful for debugging
 
 ## SWAGGER DOCS
-on web browser run localhost:<port>/docs
+on web browser run localhost:[port]/docs
   
 Example: localhost:8000/docs
 
