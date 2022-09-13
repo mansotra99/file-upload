@@ -29,7 +29,10 @@ To run just use command "**bash start.sh**"  on linux need to configure for othe
 Created Reponse, Logging Common Structure
 Added request_id(Can also be passed from Nginx Server) which can be helpful for debugging
 
-
+## SWAGGER DOCS
+on web browser run localhost:<port>/docs
+  
+Example: localhost:8000/docs
 
 
 
