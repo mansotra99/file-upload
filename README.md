@@ -1,3 +1,21 @@
+##project 
+
+**Upload to cloud Storage (GCP in mycase)**
+Using presigned Url
+
+
+## Technology:
+
+	Language : Python
+  
+	Framework :  FastApi
+  
+	Database : Mysql
+  
+	Cloud Storage : GCP
+
+
+
 
 ### **Fast-api-Boilerplate**
 https://github.com/mansotra99/Fast-api-Boilerplate
